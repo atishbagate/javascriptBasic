@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API fetch</title>
+    <style>
+        #content{
+            font-size: 34px;
+            border: 2px solid rgb(11, 19, 11);
+            background: rgba(38, 128, 212, 0.5);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p>haii</p>
+    </div>
+    
+</body>
+<script>
+    // const container = document.querySelector('#content');
+    fetch('https://cat-fact.herokuapp.com/facts')
+    .then(res => res.json())
+    .then(res =>{
+        if (res.ok) {
+            console.log("connection right");
+        } else {
+            console.log("connection fails");
+        }
+    })
+    .then(data => console.log(data))
+    .catch(error => console.log("error"))
+
+</script>
+</html>

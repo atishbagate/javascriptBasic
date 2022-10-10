@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set and clear intervals</title>
+</head>
+<body>
+    <div class="set_and_clear_intervals">
+        <p>this is timing intervals</p>
+        <p>start the counting and clear it</p>
+        <br>
+        <button id="btn">click here to start.</button>
+        <button id="btn1">click here to stop Count.</button>
+
+    </div>
+</body>
+<script>
+    const btn = document.querySelector('#btn');
+    const stopCount = document.querySelector('p');
+    const stopCounting = document.querySelector('#btn1');
+
+    let num = 0;
+    let timeRef;
+
+    const showMyCount = () =>{
+        stopCount.innerHTML = 'loading....';
+        timeRef = setInterval(() => {
+            stopCount.innerHTML = `${num}`;
+            num++;
+        }, 1000);
+    }
+    btn.addEventListener('click',showMyCount);
+    stopCounting.addEventListener('click',() =>{
+        clearInterval(timeRef);
+    });
+</script>
+</html>

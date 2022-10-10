@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="child-one">
+            <p class="child">child one</p>
+        </div>
+        <div class="child-two">
+            <p class="child">child two</p>
+        </div>
+        <div class="three">
+            <p class="child">child three</p>
+        </div>
+    </div>
+    <div class="from">
+        <form action="">
+            <label for="">male</label>
+            <input type="radio" name="gender" id="">
+            <label for="">female</label>
+            <input type="radio" name="gender" id="">
+        </form>
+    </div>
+    <div class="head">
+        <p id="heading">this heading will change.</p>
+        <button onclick="textChange()">click me</button>
+    </div>
+    <script>
+        const textChange = () => {
+        //     //1st type = we can directly write 
+        //     document.getElementById('heading').innerHTML = "text changed.";
+        // }
+            //2nd type = by taking reference, heading is the object here
+            // const headchange = document.getElementById('heading');
+        //     headchange.innerHTML = "content changed.";
+        //     //to see the element by using class name (class name may be repeated.)
+        //     console.log(document.getElementsByClassName('child')); 
+        //     //we can get element by using TagName 
+        //     console.log(document.getElementsByTagName('p'));
+        //     //get element by name 
+        //     console.log(document.getElementsByName('gender'));
+            //query selector is used to select class it tag directly and make the changes.
+            // . for class 
+            // # for id 
+            // and tag name direclty
+                // document.querySelector('.child').innerHTML = "i  changed";
+     
+                //shows all queries with class child.
+            // console.log(document.querySelectorAll('.child'));
+    }
+    </script>
+    
+</body>
+</html>

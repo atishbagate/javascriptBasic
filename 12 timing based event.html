@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 timing based event</title>
+</head>
+<body>
+    <!-- set timeout  -->
+    <div class="main-div">
+        <div>
+            <p>want to know my name ?</p>
+            <p id="showMyName"></p><br>
+            <button id="btn">click here</button>
+        </div> 
+    </div>
+    <!-- //clear timeout  -->
+    <div class="clearTimeOut">
+        <div>
+            <p>this is used to clear time out.</p>
+            <button onclick="myVar = setTimeout(myFunction,3000)">click here</button>
+            <button onclick="clearTimeout(myVar)">cancel it.</button>
+        </div>
+    </div>
+    <!-- another timeout practice  -->
+    <div class="timeout_example">
+        <div>
+            <p id="edit">this will edit.</p>
+            <p>click cancel to cancel edit upper text.</p>
+            <button  onclick="changeText = setTimeout(changed,2000)">change text</button>
+            <button onclick="clearTimeout(changeText)">click to cancel</button>
+        </div>
+    </div>
+</body>
+<script>
+    const MyName = document.querySelector('#showMyName');
+    const btn = document.querySelector('#btn');
+
+    const showMyName = () => {
+        MyName.innerHTML = "loading.. please Wait.."
+        setTimeout(() => {
+            MyName.innerHTML  = "atish ";
+        },1000)
+    }
+
+    btn.addEventListener('click', showMyName);
+
+    // clearTimeout 
+    function myFunction() {
+        alert("you missed to cancel befor 3 second.")
+    }
+    //practice clear time out 
+    function changed() {
+        const change = document.getElementById('edit').innerHTML = "changed the text";
+    }
+</script>
+</html>

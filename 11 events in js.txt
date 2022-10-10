@@ -1,0 +1,78 @@
+HTML events are things that happen to HTML elements.
+
+an HTML events can be something the browser does, or someting a user does.
+
+here are some examples of HTML events
+
+an HTML web page has finished loading 
+an HTML input field was changed 
+an HTML button was clicked
+ofen when events happen, you may want to do something
+
+4 ways to writing events
+
+using alert();
+by calling a function 
+inline events
+using event listeners
+
+note comparision between event listner and querry selector when to use it 
+
+// comparision between 3rd method and 4th method 
+
+    // getElementbyID with anynomous function understand last function only 
+    // but
+    // event listener with query selector  uses each function and execute it.
+
+    ///3rd way of writing function
+    // const thirdWay = document.getElementById("thirdWay");
+    // thirdWay.onclick = function() {
+    //     alert('by creating anonymous function and and getting element by ID');
+    // }
+    // thirdWay.onclick = function() {
+    //     console.log('by creating anonymous function and and getting element by ID');
+    // }
+    // //4th way of writing function
+    // const fourthWay = document.querySelector('#fourthWay');
+    // fourthWay.addEventListener('click',()=>{
+    //     alert('this is using event listener and query selector.');
+    // });
+    // fourthWay.addEventListener('click',()=>{
+    //     console.log('this is using event listener and query selector.');
+    // });
+
+    //----------------Event Object------------
+    event Object is the parent object of the Event Object 
+    for example => mouse event, focus event, keyboard event.etc.
+    event Object ka kaam yah hain ki app joh bhi event fire ker rahe ho woh.... apko dikhata hain .
+        const FthWay = document.querySelector('#4thWay'); //event captured 
+
+    const chekEvent = () =>{ //declaring event
+        alert('this will show you event object');
+        console.log(event); //show event information
+        console.log(event.target); //show target of event in html area.
+        console.log(event.type); //which type of event is there
+    }
+        FthWay.addEventListener('click',chekEvent); //to get alll the information about event, we can use Event Object
+
+-----------Mouse Event Object---------->
+the Mouse Event Object.
+the Event that occur when the mouse interact with the HTML
+document belongs to the Mouse Event Object
+
+---------keyboard event object-------->
+take the input from keyboard.
+ following are the properties of keyboard event 
+ onkeypress="keyPress()" onkeydown="KeyDown()" onkeyup="KeyUp()" 
+
+---------- //onchange input event in js 
+    // the onchaged event occure when the element has been changed 
+    // when we have to get data what we have given we will write onchange event.
+    we can use this feature using inline function as well as event listener also
+
+ difference between onclick and addEventListener.
+addEventListener can add multiple events, whereas with onclick this cannot be done.
+onclick can be added as an HTML attribute, whereas an addEventListener can only be added within <script> elements.
+addEventListener can take a third argument which can stop the event propagation.
+Both can be used to handle events. However, addEventListener should be the preferred choice since it can do everything onclick does and more. Don't use inline onclick as HTML attributes as this mixes up the javascript and the HTML which is a bad practice. It makes the code less maintainable.
+

@@ -9,7 +9,7 @@ console.log("getting max value ",reduceFun);
 console.log("getting max value 2 ",reduceFun2);
 
 const addingNum = (a,b) => a+b;
-
+// to add numbers in array 
 const addingNumArr = numArr.reduce(addingNum,5);
 
 console.log("Adding Number ",addingNumArr);

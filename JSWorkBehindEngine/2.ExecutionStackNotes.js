@@ -29,7 +29,8 @@ How Execution Contecxt work.
 ------ How code get executed after compiling ... means after creating a byte machine code. 
 
 It will create a global execution context. 
-  - for top level code. means code that is on top level only ( ex - name variable declation, function declaration and expression.)
+  - for top level code. means code that is on top level only 
+  ( ex - name variable declation, function declaration and expression.)
 
 what is mean by execution context - Environment in which a piece of JS is executed. 
   It Stores all the necessory information for some code to be executed.

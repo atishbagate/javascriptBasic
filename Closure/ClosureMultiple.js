@@ -11,4 +11,4 @@ function outer(){
 let test = outer();
 let inner = test();
 
-console.dir(inner)
+console.dir(inner())

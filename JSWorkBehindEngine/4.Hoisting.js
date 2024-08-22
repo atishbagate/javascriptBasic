@@ -5,7 +5,8 @@ https://www.freecodecamp.org/news/javascript-temporal-dead-zone-and-hoisting-exp
 Hoisting - make some type of variables accessible/usable in the code before 
 they are actually declared. 
 variables lifted to the top of their scope. 
-Hoisting refers to JavaScript giving higher precedence to the declaration of variables, classes, and functions during a program’s execution.
+Hoisting refers to JavaScript giving higher precedence to the declaration of variables,
+ classes, and functions during a program’s execution.
 Hoisting makes the computer process declarations before any other code.
 Note: Hoisting does not mean JavaScript rearranges or moves code above one another.
 Hoisting simply gives higher specificity to JavaScript declarations. Thus, it makes the computer read and process declarations first before analyzing any other code in a program.

@@ -1,5 +1,6 @@
 // IIFE - immediately invoked function Expression 
-// Closure will memorize the value which are used inside that function. after its parent function is being removed.
+// Closure will memorize the value which are used inside that function. 
+// after its parent function is being removed.
 
 const PrivateCounter = (()=> {
     let count = 0; 

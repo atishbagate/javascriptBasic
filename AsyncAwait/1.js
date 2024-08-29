@@ -14,11 +14,16 @@ async function call(){
     try {
         
         console.log("Start");
+
+        // this API call 
         const promise = new Promise(
             (res,rej)=>{
-                res("resolved...")
+                setTimeout(() => {
+                    res("resolved...")
+                }, 2000);
             }
         );
+ 
 
         const output = await promise;
         console.log(output);
@@ -30,3 +35,6 @@ async function call(){
 }
 
 call();
+
+
+

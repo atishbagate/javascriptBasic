@@ -6,8 +6,6 @@ A promise is an object which can be returned synchronously from an asynchronous 
  Pending:
  Rejected:
 
-
-
  */
 
  const timer = time => new Promise((resolve,reject)=> setTimeout(resolve("promise is resolved."),time));

@@ -24,6 +24,7 @@ console.log("This");
 // function greet(){
 //     console.log("Hello, "+this.name);
 // }
+ 
 // var person ={
 //     name:"atish",
 //     greet
@@ -34,6 +35,22 @@ console.log("This");
 // }
 // person.greet();
 // anotherPerson.greet();
+// ---------
+// function CarName(){
+//     console.log("the car name is "+ this.carName);
+// }
+// const audi = {
+//     carName:"r8",
+//     CarName
+// }
+// const mahindra = {
+//     carName:"Thar",
+//     CarName
+// }
+
+// audi.CarName();
+// mahindra.CarName();
+
 // ---------------
 
 // 2)

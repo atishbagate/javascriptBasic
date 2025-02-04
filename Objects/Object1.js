@@ -1,13 +1,5 @@
-console.log("Objexts in JS.");
-
-// two ways to declare Object
-// by object in singleton
-// by object literals
-
-// 1)
-// The Object.create() static method creates a new object, using an existing object as the prototype of the newly created object.
-// const user  = Object.create(mainUser); 
-
+console.log("Object in JS.");
+  
 // 2)
 // by using normal curly braces 
 // "square notation " - symbol

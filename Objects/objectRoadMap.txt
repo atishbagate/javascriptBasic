@@ -1,0 +1,87 @@
+Phase 1: Fundamentals of Objects
+✅ 1. Basics of Objects
+What are objects in JavaScript?
+Object literals vs. new Object()
+Properties and methods
+Nested objects
+deep and shallow cloning in object
+this keyword in objects
+✅ 2. Accessing & Modifying Objects
+Dot notation vs. Bracket notation
+Adding, updating, and deleting properties
+Checking if a property exists (in operator, hasOwnProperty)
+✅ 3. Looping through Objects
+for...in loop
+Object.keys(), Object.values(), Object.entries()
+Using map(), filter(), reduce() on objects
+Phase 2: Advanced Object Manipulation
+✅ 4. Object Methods & Shortcuts
+Defining methods inside objects
+Object.assign() for cloning
+Spread operator (...) for copying objects
+Object destructuring
+✅ 5. Object Freezing & Sealing
+Object.freeze() (immutable objects)
+Object.seal() (prevents adding/removing properties)
+✅ 6. Computed Property Names
+js
+Copy
+Edit
+const key = "age";
+const user = { name: "John", [key]: 30 }; // { name: "John", age: 30 }
+✅ 7. Getters & Setters
+js
+Copy
+Edit
+const user = {
+  firstName: "John",
+  lastName: "Doe",
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+};
+console.log(user.fullName); // "John Doe"
+Phase 3: Prototypes & Inheritance
+✅ 8. Understanding Prototypes
+What is __proto__?
+Prototype chaining
+Object.create()
+Modifying prototypes
+✅ 9. Constructor Functions
+Creating objects using functions
+Difference between constructor functions and object literals
+js
+Copy
+Edit
+function Person(name) {
+  this.name = name;
+}
+const p1 = new Person("Alice");
+✅ 10. ES6 Classes & Inheritance
+class syntax
+Extending classes using extends
+Method overriding
+Phase 4: Object-Oriented Programming (OOP) in JS
+✅ 11. Encapsulation & Private Properties
+Using closures to create private variables
+#privateProperties (ES6)
+js
+Copy
+Edit
+class User {
+  #password;
+  constructor(password) {
+    this.#password = password;
+  }
+}
+✅ 12. Polymorphism & Abstraction
+Overriding methods
+Using abstract classes in JavaScript
+Phase 5: Performance Optimization & Design Patterns
+✅ 13. Memory Management
+Object references & garbage collection
+Shallow vs. deep copy (structuredClone(), JSON.parse(JSON.stringify()))
+✅ 14. Design Patterns with Objects
+Factory pattern
+Singleton pattern
+Observer pattern (event-driven architecture)

@@ -6,14 +6,17 @@ Properties and methods
 Nested objects
 deep and shallow cloning in object
 this keyword in objects
+
 ✅ 2. Accessing & Modifying Objects
 Dot notation vs. Bracket notation
 Adding, updating, and deleting properties
 Checking if a property exists (in operator, hasOwnProperty)
+
 ✅ 3. Looping through Objects
 for...in loop
 Object.keys(), Object.values(), Object.entries()
 Using map(), filter(), reduce() on objects
+
 Phase 2: Advanced Object Manipulation
 ✅ 4. Object Methods & Shortcuts
 Defining methods inside objects
@@ -41,6 +44,7 @@ const user = {
   }
 };
 console.log(user.fullName); // "John Doe"
+
 Phase 3: Prototypes & Inheritance
 ✅ 8. Understanding Prototypes
 What is __proto__?
@@ -61,6 +65,7 @@ const p1 = new Person("Alice");
 class syntax
 Extending classes using extends
 Method overriding
+
 Phase 4: Object-Oriented Programming (OOP) in JS
 ✅ 11. Encapsulation & Private Properties
 Using closures to create private variables

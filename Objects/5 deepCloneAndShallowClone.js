@@ -91,27 +91,27 @@
 // console.log(deepClone.date === obj1.date);
 
 //4.  manually recursive function creation 
-function deepClone(obj) {
-    if (obj === null || typeof obj !== "object") return obj;
+// function deepClone(obj) {
+//     if (obj === null || typeof obj !== "object") return obj;
   
-    if (Array.isArray(obj)) return obj.map(deepClone);
+//     if (Array.isArray(obj)) return obj.map(deepClone);
   
-    const copy = {};
-    for (let key in obj) {
-      if (obj.hasOwnProperty(key)) {
-        copy[key] = deepClone(obj[key]);
-      }
-    }
-    return copy;
-  }
+//     const copy = {};
+//     for (let key in obj) {
+//       if (obj.hasOwnProperty(key)) {
+//         copy[key] = deepClone(obj[key]);
+//       }
+//     }
+//     return copy;
+//   }
   
-  const obj4 = { name: "Alice", details: { age: 25 } };
-  const deepCopy4 = deepClone(obj4);
+//   const obj4 = { name: "Alice", details: { age: 25 } };
+//   const deepCopy4 = deepClone(obj4);
   
-  deepCopy4.details.age = 30;
+//   deepCopy4.details.age = 30;
   
-  console.log(obj4.details.age); // 25 ✅ (No mutation)
-  console.log(deepCopy4.details.age); // 30
+//   console.log(obj4.details.age); // 25 ✅ (No mutation)
+//   console.log(deepCopy4.details.age); // 30
 //   ✅ Pros:
 // ✔️ Full control over cloning logic
 // ✔️ Works without external libraries

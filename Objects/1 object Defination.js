@@ -5,4 +5,4 @@
 // Objects allow us to store, access, 
 // and manipulate related data efficiently.
 
-// there are almost 4 methods to create object 
+// there are almost 4 methods to create object

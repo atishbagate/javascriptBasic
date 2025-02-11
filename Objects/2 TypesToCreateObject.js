@@ -29,7 +29,7 @@
 //   let car = new Car("Toyota", "Camry", 2021);
 //   console.log(typeof(car));
 
-// 4. ES6 Classes
+// 4. ES6 Classes - Object.create() 
 // The Object.create() static method creates a new object, using an existing object as the prototype of the newly created object.
 //   ES6 classes are syntactic sugar over constructor functions, 
 //   so they have similar performance characteristics. They provide a more intuitive way to work with object-oriented patterns.

@@ -45,13 +45,23 @@ const user = {
         phone:"123-456-789",
         printContact(){
             console.log(`email : ${this.email}, phone: ${this.phone}`);
+        },
+        location:{
+            city:"nashik",
+            state:"maharashtra",
+            pin:"123432"
         }
+    },
+    health:{
+        height:123,
+        weight:90
     }
 };
 user.contact.printContact();
 
 // handling deeply nested objects
 console.log(user?.contact?.phone);
+console.log(user?.health);
 
 //copying nested object.
 // Shallow Copy (Issue with Nesting)

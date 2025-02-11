@@ -30,7 +30,7 @@ user.age = 30;
 user.city = "Los Angeles";
 
 console.log(user);
-// { name: "Alice", age: 30, city
+// { name: "Alice", age: 30, city:"Los Angeles"}
 
 const key = "email";
 user[key] = "alice@example.com"; // Dynamically add/update

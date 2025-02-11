@@ -8,7 +8,7 @@
 // console.log("gender" in obj); // false
 
 // 2. hasOwnProperty
-// let obj = { name: "John", age: 30 };
+let obj = { name: "John", age: 30 };
 
 // console.log(obj.hasOwnProperty("name")); // true
 // console.log(obj.hasOwnProperty("gender")); // false
@@ -16,8 +16,8 @@
 // 3. undefined Check
 // let obj = { name: "John", age: 30 };
 
-// console.log(obj.name !== undefined); // true
-// console.log(obj.gender !== undefined); // false
+console.log(obj.name !== undefined); // true
+console.log(obj.gender !== undefined); // false
 
 
 // Each method has its own use case. For example, 

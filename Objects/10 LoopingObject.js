@@ -6,16 +6,22 @@ const obj = {
 
 // 1. normal iteration using for...in
 for (const key in obj) { 
-    console.log(`${key} : ${obj[key]}`);
+    console.log(`${key} -> ${obj[key]}`);
 };
 // 2. using Object.keys() -  returns an array of the object's keys.
-Object.keys(obj).forEach(key=> {console.log(`${key} : ${obj[key]}`)});
+const objArray = Object.keys(obj);
+console.log(objArray);
+objArray.forEach(key=> {console.log(`${key} : ${obj[key]}`)});
 
 // 3. Object.values() - returns an array of the object's values.
-const objArr = Object.values(obj).forEach(value=>{console.log(value)})
+const objArr = Object.values(obj);
+console.log(objArr);
+objArr.forEach(value=>{console.log(value)})
 
 // 4. Object.entries -  returns an array of [key, value] pairs.
-Object.entries(obj).forEach(([key,value])=>{console.log(`${key} : ${value}`)});
+const objEntry = Object.entries(obj);
+console.log(objEntry);
+objEntry.forEach(([key,value])=>{console.log(`${key} -> ${value}`)});
 
 
 // -------------------------------

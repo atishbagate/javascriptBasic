@@ -9,7 +9,8 @@ Hoisting refers to JavaScript giving higher precedence to the declaration of var
  classes, and functions during a program’s execution.
 Hoisting makes the computer process declarations before any other code.
 Note: Hoisting does not mean JavaScript rearranges or moves code above one another.
-Hoisting simply gives higher specificity to JavaScript declarations. Thus, it makes the computer read and process declarations first before analyzing any other code in a program.
+Hoisting simply gives higher specificity to JavaScript declarations. 
+Thus, it makes the computer read and process declarations first before analyzing any other code in a program.
 in details - 
     code is scanned for variable declarations, and for each variable,
     new property is created in the variable environment object. 

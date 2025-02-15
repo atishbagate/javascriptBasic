@@ -53,7 +53,8 @@ Promise.all([promise1,promise2,promise3]).then((values)=>{
 })
 
 /*
-    2. Promise.allSettled() - it is static method takes an iterable of promises as input and returns a single Promise when all promises are settled. ( either it may resolve or reject. )
+    2. Promise.allSettled() - it is static method takes an iterable of promises as input and returns a single Promise when all promises are settled.
+     ( either it may resolve or reject. )
 */
 const promise4 = Promise.resolve(4);
 const promise5 = Promise.resolve(5);

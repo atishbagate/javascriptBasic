@@ -19,21 +19,20 @@ const numArr = [1,2,4,2,5,9,4,2,10,3,18];
   return arr;
  }
 
- function Sorting(arr){
+ function Sorting(str){
   
-    let i,j,temp; 
+  let i,j,temp;
 
-    for(i=0;i<arr.length;i++){
-      for(j=i+1;j < arr.length; j++){
-
-        if(arr[i] > arr[j]){
-          temp = arr[i];
-          arr[i] = arr[j];
-          arr[j] = temp;
-        }
+  for(i=0;i<str.length;i++){
+    for(j=i+1;j<str.length;j++){
+      if(str[i] > str[j]){
+        temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
       }
     }
-    return arr;
+  }
+  return str;
  };
 
 function FindPrime(arr){
@@ -41,7 +40,7 @@ function FindPrime(arr){
   const sorted = arr.sort((a,b)=> a-b);
   const bubbleSort = Bubble(arr);
   const bubbling = Sorting(arr);
-  console.log(bubbling);
+  console.log(sorted);
 
   const uniqueArr = [...new Set(sorted)];
   console.log(uniqueArr);
@@ -53,3 +52,7 @@ function FindPrime(arr){
 };
 
 FindPrime(numArr);
+ 
+
+
+

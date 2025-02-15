@@ -8,6 +8,10 @@ let arrr = [1,4,5,3,9,8,4,5];
 let sliced = arrr.slice(4,6);
 console.log(sliced);
 
+let arrrstr = [1,4,5,3,9,8,4,5];
+console.log(arrrstr.splice(1,4,12,15,33,42,23,234,));
+console.log(arrrstr);
+
 let merge = arrr.concat([10,21]);
 console.log(merge);
 

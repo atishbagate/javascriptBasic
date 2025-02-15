@@ -13,4 +13,4 @@ A promise is an object which can be returned synchronously from an asynchronous 
  timer(3000)
  .then((val)=> console.log("Timer executeds --- "+val))
  .catch((err)=> console.log(" promise is rejected --- "+err))
- .finally(()=>console.log("Promise is closed"))
+ .finally(()=>console.log("Promise is closed")) 
